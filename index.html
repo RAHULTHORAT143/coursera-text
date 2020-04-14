@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myFirstApp">
 <head>
-	<title>first page </title>
-</head>
-<body>
-<h1>Welcome to new world of AngularJs </h1>
 
-<h1>Rahul this is your first project on github </h1>
+	<meta charset="utf-8">
+	<title>first page </title>
+	<script src="angular.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<body >
+<h1 align="center">DI of angularjs</h1>
+
+
+<div ng-controller="MyFirstAppController">
+
+	First Name:<input type="text" ng-model="name" ng-keyup="displayNumeric();">{{name}}
+	
+	<br>
+	<div> Total numeric value of a name is:{{totalValue}}</div> 
+	
+</div>
+
+
 </body>
 </html>
